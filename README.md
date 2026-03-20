@@ -139,7 +139,7 @@ npm start
 
 ---
 
-📧 Reminder System
+### 📧 Reminder System
 
 ⏰ Deadline reminders → 2 days before
 
@@ -149,7 +149,7 @@ npm start
 
 ---
 
-🔮 Future Scope
+### 🔮 Future Scope
 
 📱 Mobile application
 
@@ -168,6 +168,6 @@ npm start
 
 ---
 
-⭐ Acknowledgment
+### ⭐ Acknowledgment
 
 This project was developed as part of an academic initiative to demonstrate full-stack development with real-world applications.

@@ -58,11 +58,10 @@ everyday-companion/
     │   ├── api.js
     │   └── App.js
     └── package.json
-
 ⚙️ Installation & Setup
 
 1️⃣ Clone the Repository
-git clone https://github.com/YOUR_USERNAME/everyday-companion.git
+git clone https://github.com/Vaishnavi-220706/everyday-companion.git
 cd everyday-companion
 
 2️⃣ Backend Setup
@@ -145,4 +144,4 @@ Voice assistant for elderly users
 
 👩‍💻 Author
 
-Developed as an academic full-stack project.
+P.Vaishnavi

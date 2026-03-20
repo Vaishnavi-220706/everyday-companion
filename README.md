@@ -1,115 +1,114 @@
-🌟 Everyday Companion
+# 🌟 Everyday Companion  
 
-Welcome to the Everyday Companion – a full-stack web application designed to assist students and elderly users in managing their daily activities, productivity, and health routines.
+Welcome to the **Everyday Companion** – a full-stack web application designed to assist **students and elderly users** in managing daily activities, productivity, and health routines.
 
-This project was developed as part of an academic full-stack project to demonstrate how modern web technologies can solve real-world problems through intelligent task management and reminder systems.
+This project was developed as part of an academic full-stack project to demonstrate how technology can solve real-world problems through intelligent task management and reminder systems.
 
-📌 Table of Contents
+---
 
-🧠 About the Project
+## 📌 Table of Contents  
 
-🚀 Features
+- 🧠 About the Project  
+- 🚀 Features  
+- 🛠️ Tech Stack  
+- 📁 Project Structure  
+- 💡 How It Works  
+- ▶️ Running the Project  
+- 📧 Reminder System  
+- 🔮 Future Scope  
+- 👩‍💻 Author  
 
-🛠️ Tech Stack
+---
 
-📁 Project Structure
+## 🧠 About the Project  
 
-💡 How It Works
+The **Everyday Companion** supports two types of users:
 
-▶️ Running the Project
+- 🎓 **Students** – manage deadlines, study plans, and productivity  
+- 👵 **Elderly Users** – manage medicines, food habits, and appointments  
 
-📧 Reminder System
+It uses a full-stack architecture with email reminders to ensure users never miss important tasks.
 
-🔮 Future Scope
+---
 
-👩‍💻 Author
+## 🚀 Features  
 
-🧠 About the Project
+### 🎓 Student Module  
+- 📅 Deadline Tracker with smart reminders  
+- 📚 Study Planner (daily timetable management)  
+- ⏱️ Focus Timer for productivity sessions  
 
-The Everyday Companion is designed to support two types of users:
+### 👵 Elder Module  
+- 💊 Medicine Reminder with email alerts  
+- 🍽️ Food Checklist & water tracking  
+- 🏥 Appointment Tracker with notifications  
 
-🎓 Students – to manage deadlines, study plans, and productivity
+---
 
-👵 Elderly Users – to manage medicines, food habits, and doctor appointments
+## 🛠️ Tech Stack  
 
-The system uses a full-stack architecture with real-time reminders and email notifications to ensure users never miss important tasks.
+| Component | Technology |
+|----------|-----------|
+| Frontend | React.js, Context API |
+| Backend | Node.js, Express.js |
+| Database | MongoDB (Mongoose) |
+| Authentication | JWT (JSON Web Tokens) |
+| Email Service | Nodemailer (Gmail SMTP) |
+| Scheduler | node-cron |
 
-🚀 Features
-🎓 Student Module
+---
 
-📅 Deadline Tracker with smart reminders
+## 📁 Project Structure  
 
-📚 Study Planner (daily timetable management)
 
-⏱️ Focus Timer for productivity sessions
-
-👵 Elder Module
-
-💊 Medicine Reminder with email alerts
-
-🍽️ Food Checklist & water tracking
-
-🏥 Appointment Tracker with notifications
-
-🛠️ Tech Stack
-Component	Technology
-Frontend	React.js, Context API
-Backend	Node.js, Express.js
-Database	MongoDB (Mongoose)
-Authentication	JWT (JSON Web Tokens)
-Email Service	Nodemailer (Gmail SMTP)
-Scheduler	node-cron
-📁 Project Structure
 everyday-companion/
 │
 ├── backend/
-│   ├── config/        # DB & Mail configuration
-│   ├── controllers/   # Business logic
-│   ├── models/        # MongoDB schemas
-│   ├── routes/        # API routes
-│   ├── middleware/    # Authentication middleware
-│   ├── jobs/          # Cron jobs for reminders
-│   └── server.js
+│ ├── config/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ ├── jobs/
+│ └── server.js
 │
 └── frontend/
-    ├── src/
-    │   ├── components/
-    │   ├── pages/
-    │   │   ├── Login.js
-    │   │   ├── Register.js
-    │   │   ├── StudentDashboard.js
-    │   │   ├── ElderDashboard.js
-    │   │   ├── DeadlineTracker.js
-    │   │   ├── StudyPlanner.js
-    │   │   ├── FocusTimer.js
-    │   │   ├── MedicineReminder.js
-    │   │   ├── FoodChecklist.js
-    │   │   └── AppointmentTracker.js
-    │   ├── context/
-    │   └── App.js
-💡 How It Works
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── context/
+│ └── App.js
 
-Users register and log in based on their role (student / elder)
 
-JWT authentication secures user sessions
+---
 
-Data is stored in MongoDB
+## 💡 How It Works  
 
-Users interact with features through a React-based UI
+- Users register and log in based on their role (student / elder)  
+- JWT authentication secures user sessions  
+- Data is stored in MongoDB  
+- Users interact through a React-based interface  
+- Background cron jobs check for reminders  
+- Email notifications are sent using Nodemailer  
 
-Background cron jobs continuously check for reminders
+---
 
-Email notifications are sent using Nodemailer
+## ▶️ Running the Project  
 
-▶️ Running the Project
-Step 1: Clone the Repository
+### Step 1: Clone the Repository  
+
+```bash
 git clone https://github.com/YOUR_USERNAME/everyday-companion.git
 cd everyday-companion
-Step 2: Backend Setup
+```
+### Step 2: Backend Setup  
+
+```bash
 cd backend
 npm install
+```
 
-Create .env file and add:
+Create a .env file and add:
 
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
@@ -117,43 +116,58 @@ PORT=5000
 EMAIL_USER=your_email
 EMAIL_PASS=your_app_password
 CLIENT_URL=http://localhost:3000
-Step 3: Frontend Setup
+
+###Step 3: Frontend Setup
+```bash
 cd ../frontend
 npm install
-Step 4: Run the Application
+```
+
+### Step 4: Run the Application
 
 Backend:
-
+```bash
 cd backend
 npm start
+```
 
 Frontend:
-
+```bash
 cd frontend
 npm start
+```
+
+---
+
 📧 Reminder System
 
-⏰ Deadline Reminders → Sent 2 days before due date
+⏰ Deadline reminders → 2 days before
 
-💊 Medicine Reminders → Checked every minute
+💊 Medicine reminders → every minute check
 
-🏥 Appointment Reminders → Sent 24 hours before
+🏥 Appointment reminders → 24 hours before
+
+---
 
 🔮 Future Scope
 
-📱 Mobile application development
+📱 Mobile application
 
 🔔 Push notifications
 
-🤖 AI-based personalized scheduling
+🤖 AI-based scheduling
 
-🌐 Integration with healthcare APIs
+🌐 Healthcare integrations
+
+---
 
 👩‍💻 Author
 
 Pallagani Vaishnavi
 📍 India
 
+---
+
 ⭐ Acknowledgment
 
-This project was developed as part of an academic initiative to demonstrate the integration of full-stack development with real-world problem solving.
+This project was developed as part of an academic initiative to demonstrate full-stack development with real-world applications.

@@ -161,11 +161,10 @@ npm start
 
 ---
 
-👩‍💻 Author
+## 👩‍💻 Author  
 
-Pallagani Vaishnavi
-
-📍 India
+**Pallagani Vaishnavi**  
+📍 India  
 
 ---
 

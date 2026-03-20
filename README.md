@@ -1,24 +1,8 @@
 🌟 Everyday Companion
-A Full-Stack Web Application for Students & Elders
-
-A comprehensive productivity and care management platform designed for students and elderly users.
-It helps manage deadlines, study plans, health routines, and reminders in a single unified system.
-
+<p align="center"> <b>A Full-Stack Web App for Students & Elders</b><br/> Manage productivity, health, and daily routines in one place 💙 </p>
 🚀 Tech Stack
-
-Frontend: React.js, Context API, Axios
-
-Backend: Node.js, Express.js
-
-Database: MongoDB (Mongoose)
-
-Authentication: JWT (JSON Web Tokens)
-
-Email Service: Nodemailer (Gmail SMTP)
-
-Scheduler: node-cron
-
-✨ Key Features
+<p> <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react"/> <img src="https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge&logo=node.js"/> <img src="https://img.shields.io/badge/Database-MongoDB-darkgreen?style=for-the-badge&logo=mongodb"/> <img src="https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge"/> <img src="https://img.shields.io/badge/Email-Nodemailer-red?style=for-the-badge"/> </p>
+✨ Features
 🎓 Student Module
 
 📅 Deadline Tracker with smart reminders
@@ -36,35 +20,28 @@ Scheduler: node-cron
 🏥 Appointment Tracker with notifications
 
 📁 Project Structure
-
 everyday-companion/
 │
 ├── backend/
-│   ├── config/        # DB & Mail configuration
+│   ├── config/        # DB & Mail config
 │   ├── controllers/   # Business logic
 │   ├── models/        # MongoDB schemas
 │   ├── routes/        # API routes
-│   ├── middleware/    # Authentication middleware
-│   ├── jobs/          # Cron jobs for reminders
-│   ├── server.js      # Entry point
-│   └── package.json
+│   ├── middleware/    # Auth middleware
+│   ├── jobs/          # Cron jobs
+│   └── server.js
 │
 └── frontend/
-    ├── public/
     ├── src/
     │   ├── components/
     │   ├── pages/
     │   ├── context/
-    │   ├── api.js
     │   └── App.js
-    └── package.json
 ⚙️ Installation & Setup
-
-1️⃣ Clone the Repository
-git clone https://github.com/Vaishnavi-220706/everyday-companion.git
+🔹 Clone the Repository
+git clone https://github.com/YOUR_USERNAME/everyday-companion.git
 cd everyday-companion
-
-2️⃣ Backend Setup
+🔹 Backend Setup
 cd backend
 npm install
 
@@ -76,72 +53,41 @@ PORT=5000
 EMAIL_USER=your_email
 EMAIL_PASS=your_app_password
 CLIENT_URL=http://localhost:3000
-
-3️⃣ Frontend Setup
-
-cd ../frontend
+🔹 Frontend Setup
+cd frontend
 npm install
-
-4️⃣ Run the Application
-
-Backend:
-
+▶️ Run the App
+# Backend
 cd backend
 npm start
 
-Frontend:
-
+# Frontend
 cd frontend
 npm start
+🔐 Authentication
 
-🔐 Authentication Flow
+JWT-based authentication
 
-User registers with role (student / elder)
+Password hashing using bcrypt
 
-Password is hashed using bcrypt
+Role-based access (Student / Elder)
 
-JWT token is generated on login
+📧 Email Reminders
 
-Protected routes use middleware for verification
+⏰ Deadlines → 2 days before
 
-📧 Email Reminder System
+💊 Medicines → real-time alerts
 
-⏰ Deadlines: Daily reminders (2 days before)
+🏥 Appointments → 24 hours before
 
-💊 Medicine: Real-time (every minute check)
+🚀 Future Enhancements
 
-🏥 Appointments: Daily reminder (24 hours before)
+📱 Mobile App (React Native)
 
-🌐 API Overview
-| Method | Endpoint             | Description     |
-| ------ | -------------------- | --------------- |
-| POST   | `/api/auth/register` | Register        |
-| POST   | `/api/auth/login`    | Login           |
-| GET    | `/api/auth/me`       | Current user    |
-| GET    | `/api/deadlines`     | Get deadlines   |
-| POST   | `/api/deadlines`     | Create deadline |
-| GET    | `/api/medicines`     | Get medicines   |
-| POST   | `/api/appointments`  | Add appointment |
+🔔 Push Notifications
 
-
-MongoDB error: Ensure DB is running or use Atlas
-
-Email not working: Use Gmail App Password
-
-Port issue: Change .env PORT
-
-CORS issue: Verify CLIENT_URL
-
-📌 Future Enhancements
-
-Mobile application (React Native)
-
-Push notifications
-
-AI-based schedule optimization
-
-Voice assistant for elderly users
+🤖 AI-based schedule suggestions
 
 👩‍💻 Author
 
-P.Vaishnavi
+Developed as a full-stack academic project ❤️
